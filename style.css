@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+  }
+
+body {
+    background-color: #263238;
+}
+
+.search-bar {
+    display: flex;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+form {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.pokemon-input {
+    width: 500px;
+    height: 50px;
+    border: 0px;
+    font-size: 35px;
+    padding-left: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pokemon-input::placeholder {
+    font-size: 35px;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.pokemon-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container {
+    text-align: center;
+    border: 3px solid rgb(92, 96, 99);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 0px 10px;
+    background-image: url('images/img_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+
+}
+
+.w-h {
+    margin: 0px 10px;
+    text-align: center;
+    background-color: rgb(187, 182, 182);
+    border: 3px solid rgb(92, 96, 99);
+    border-top: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    white-space: pre;
+    font-weight: bold;
+}
+
+.moves {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    font-weight: bold;
+    margin: 10px 5px 0px 5px;
+}
+
+.move {
+    display: flex;
+    margin: 5px;
+}
+
+.move p {
+    margin: 0px 10px;
+    color: rgb(134, 18, 18);
+    text-transform: capitalize;
+    font-size: 22px;;
+}
+
+.move span {
+    display: flex;
+    align-items: center;
+    background-color: rgb(134, 18, 18);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid rgb(175, 170, 170);
+    padding: 0px 30px;
+    font-size: 16px;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.stat {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0px 5px;
+    text-transform: capitalize;
+    line-height: 10%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 550px;
+    border-radius: 15px;
+    background-image: url('images/background.png');
+    border: 15px solid;
+    border-image: url('images/border.png') 30;
+    margin: 30px;
+    cursor: pointer;
+    
+}
+
+.card-hover {
+    width: 400px;
+    height: 550px;
+    margin: 30px;
+    border-radius: 15px;
+    background-image: url('images/back_img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 15px solid rgb(11, 11, 73)
+}
